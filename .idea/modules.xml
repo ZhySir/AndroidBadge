@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidBadge.iml" filepath="$PROJECT_DIR$/AndroidBadge.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libbadges/libbadges.iml" filepath="$PROJECT_DIR$/libbadges/libbadges.iml" />
     </modules>
   </component>
 </project>
