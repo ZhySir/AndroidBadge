@@ -4,7 +4,7 @@ group = 'com.github.ZhySir'
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
-
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
 
 
     defaultConfig {
@@ -27,10 +27,14 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation rootProject.ext.deps.supportV7
-    testImplementation rootProject.ext.deps.junit
-    androidTestImplementation rootProject.ext.deps.runner
-    androidTestImplementation rootProject.ext.deps.espresso
+    compile rootProject.ext.deps.supportV7
+    testCompile rootProject.ext.deps.junit
+    androidTestCompile(rootProject.ext.deps.runner, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestCompile(rootProject.ext.deps.espresso, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
 }

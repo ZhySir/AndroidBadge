@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initView() {
-        tvHelloWorld = findViewById(R.id.tv_HelloWorld);
+        tvHelloWorld = (TextView) findViewById(R.id.tv_HelloWorld);
 
         tvHelloWorld.setOnClickListener(this);
     }

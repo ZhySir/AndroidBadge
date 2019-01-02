@@ -20,15 +20,17 @@ android {
 }
 
 dependencies {
-    androidTestCompile('com.android.support:support-annotations:26.1.0') {
-        force = true
-    }
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation rootProject.ext.deps.supportV7
-    implementation rootProject.ext.deps.constraint
-    testImplementation rootProject.ext.deps.junit
-    androidTestImplementation rootProject.ext.deps.runner
-    androidTestImplementation rootProject.ext.deps.espresso
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile rootProject.ext.deps.supportV7
+    compile rootProject.ext.deps.constraint
+    testCompile rootProject.ext.deps.junit
+    androidTestCompile(rootProject.ext.deps.runner, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    androidTestCompile(rootProject.ext.deps.espresso, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
 
-    implementation 'com.github.ZhySir:AndroidBadge:1.0.0'
+    compile project(path: ':libbadges')
+
 }
