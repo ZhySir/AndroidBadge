@@ -16,6 +16,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        debug{
+            testCoverageEnabled true
+        }
     }
 }
 
@@ -24,9 +28,7 @@ dependencies {
     compile rootProject.ext.deps.supportV7
     compile rootProject.ext.deps.constraint
     testCompile rootProject.ext.deps.junit
-    androidTestCompile(rootProject.ext.deps.runner, {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    androidTestCompile rootProject.ext.deps.runner
     androidTestCompile(rootProject.ext.deps.espresso, {
         exclude group: 'com.android.support', module: 'support-annotations'
     })

@@ -31,9 +31,7 @@ dependencies {
 
     compile rootProject.ext.deps.supportV7
     testCompile rootProject.ext.deps.junit
-    androidTestCompile(rootProject.ext.deps.runner, {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    androidTestCompile rootProject.ext.deps.runner
     androidTestCompile(rootProject.ext.deps.espresso, {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
