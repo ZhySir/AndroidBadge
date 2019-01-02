@@ -17,7 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
-        debug{
+        debug {
             testCoverageEnabled true
         }
     }
@@ -28,11 +28,28 @@ dependencies {
     compile rootProject.ext.deps.supportV7
     compile rootProject.ext.deps.constraint
     testCompile rootProject.ext.deps.junit
-    androidTestCompile rootProject.ext.deps.runner
-    androidTestCompile(rootProject.ext.deps.espresso, {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    compile rootProject.ext.deps.design
 
     compile project(path: ':libbadges')
+
+    //Jacoco 生成报告的依赖
+    androidTestCompile(rootProject.ext.deps.testRunner, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // Set this dependency to use JUnit 4 rules
+    androidTestCompile(rootProject.ext.deps.testRules, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    // Espresso-contrib for DatePicker, RecyclerView, Drawer actions, Accessibility checks, CountingIdlingResource
+    androidTestCompile(rootProject.ext.deps.espressoContrib, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+        exclude group: 'com.android.support', module: 'design'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    })
+    androidTestCompile(rootProject.ext.deps.espressoCore, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
 
 }
