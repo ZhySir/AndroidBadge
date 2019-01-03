@@ -8,4 +8,4 @@ ps.图标顺序对应下面顺序
 4. Codecov徽章：[Codecov](https://codecov.io/gh/ZhySir/AndroidBadge "Codecov") 是开源的测试结果展示平台，将测试结果可视化。Github上许多开源项目都使用了Codecov来展示单测结果。  
 5. API level 徽章：[API leavel](https://android-arsenal.com/api?level=14 "API level") 是 android-arsenal 网站提供的 android api 展示的徽章。可以在项目主页中直接使用 badge 的内容。  
 6. Codacy徽章：[Codacy](https://www.codacy.com/app/ZhySir/AndroidBadge?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ZhySir/AndroidBadge&amp;utm_campaign=Badge_Grade) 编程代码自动审查服务平台。帮助开发者及时发现代码中的 bug，提升软件运行质量，主要包括代码质量、语法规范、功能可用性方面的检查。  
-7. 个人专属徽章：[Shiedls](https://shields.io/ "Shiedls") 根据自己的需求可以定制很多样式的徽章，全凭个人 爱好，怎么开心怎么玩。
+7. 个人专属徽章：[Shiedls](https://shields.io/ "Shiedls") 根据自己的需求可以定制很多样式的徽章，全凭个人爱好，怎么开心怎么玩。
