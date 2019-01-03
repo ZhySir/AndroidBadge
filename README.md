@@ -7,5 +7,5 @@ ps.图标顺序对应下面顺序
 3. Cricle CI徽章：[Cricle CI](https://circleci.com/gh/ZhySir/AndroidBadge/tree/master "Cricle CI") 是也一个线托管的CI服务，和上面相同，不过这个相对来说比较好用一些，可以 SSH 到测试容器，方便在出问题的时候上去调试找原因，界面相对好看一些。  
 4. Codecov徽章：[Codecov](https://codecov.io/gh/ZhySir/AndroidBadge "Codecov") 是开源的测试结果展示平台，将测试结果可视化。Github上许多开源项目都使用了Codecov来展示单测结果。  
 5. API level 徽章：[API leavel](https://android-arsenal.com/api?level=14 "API level") 是 android-arsenal 网站提供的 android api 展示的徽章。可以在项目主页中直接使用 badge 的内容。  
-6. Codacy徽章：[Codacy](https://www.codacy.com/app/ZhySir/AndroidBadge?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ZhySir/AndroidBadge&amp;utm_campaign=Badge_Grade) 编程代码自动审查服务平台。帮助开发者及时发现代码中的 bug，提升软件运行质量，主要包括代码质量、语法规范、功能可用性方面的检查。  
+6. Codacy徽章：[Codacy](https://www.codacy.com/app/ZhySir/AndroidBadge?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ZhySir/AndroidBadge&amp;utm_campaign=Badge_Grade "Codacy") 编程代码自动审查服务平台。帮助开发者及时发现代码中的 bug，提升软件运行质量，主要包括代码质量、语法规范、功能可用性方面的检查。  
 7. 个人专属徽章：[Shiedls](https://shields.io/ "Shiedls") 根据自己的需求可以定制很多样式的徽章，全凭个人爱好，怎么开心怎么玩。
